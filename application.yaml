@@ -20,4 +20,4 @@ eureka:
     preferIpAddress: true
   client:
     service-url:
-      defaultZone: http://discovery-service:8761/eureka
+      defaultZone: http://discovery-service:8761/eureka/

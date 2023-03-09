@@ -1,3 +1,5 @@
 spring:
   datasource:
     url: jdbc:postgresql://product-database:5432/product_db
+server:
+  port: 8001

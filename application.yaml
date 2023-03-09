@@ -3,21 +3,21 @@ spring:
     default: prod
     active: dev
 
-logging:
-  level:
-    org.springframework.security: INFO
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 20000
-
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    service-url:
-      defaultZone: http://discovery-service:8761/eureka/
+#logging:
+#  level:
+#    org.springframework.security: INFO
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 20000
+#
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    service-url:
+#      defaultZone: http://discovery-service:8761/eureka/

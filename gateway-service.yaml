@@ -4,5 +4,21 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
 
+  routes:
+    account-service:
+      path: /api/users/**
+      serviceId: user-service
+      stripPrefix: false
+
+    bill-service:
+      path: /api/products/**
+      serviceId: product-service
+      stripPrefix: false
+
+    deposit-service:
+      path: /api/orders/**
+      serviceId: order-service
+      stripPrefix: false
+
 server:
-  port: 8080
+  port: 80

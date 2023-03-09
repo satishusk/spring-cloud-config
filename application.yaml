@@ -1,1 +1,23 @@
-greeting=hi
+spring:
+  profiles:
+    default: prod
+    active: dev
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  test:
+    database:
+      replace: none
+
+  sql:
+    init:
+      platform: postgres

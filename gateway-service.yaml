@@ -10,21 +10,21 @@ spring:
       httpclient:
         ssl:
           useInsecureTrustManager: true
-          routes:
-            - id: users
-              uri: http://user-service
-              predicates:
-                - Path=/api/users/**
+      routes:
+        - id: users
+          uri: http://user-service
+          predicates:
+            - Path=/api/users/**
 
-            - id: products
-              uri: http://product-service
-              predicates:
-                - Path=/api/products/**
+        - id: products
+          uri: http://product-service
+          predicates:
+            - Path=/api/products/**
 
-            - id: orders
-              uri: http://order-service
-              predicates:
-                - Path=/api/orders/**
+        - id: orders
+          uri: http://order-service
+          predicates:
+            - Path=/api/orders/**
 
 server:
   port: 8080

@@ -20,5 +20,27 @@ zuul:
       serviceId: order-service
       stripPrefix: false
 
+  spring:
+    cloud:
+      gateway:
+        httpclient:
+          ssl:
+            useInsecureTrustManager: true
+            routes:
+              - id: users
+                uri: http://user-service
+                predicates:
+                  - Path=/api/users/**
+
+              - id: products
+                uri: http://product-service
+                predicates:
+                  - Path=/api/products/**
+
+              - id: orders
+                uri: http://order-service
+                predicates:
+                  - Path=/api/orders/**
+
 server:
   port: 80

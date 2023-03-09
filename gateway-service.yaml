@@ -43,4 +43,4 @@ zuul:
                   - Path=/api/orders/**
 
 server:
-  port: 80
+  port: 8080

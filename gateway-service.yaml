@@ -1,9 +1,3 @@
-zuul:
-  ignoredServices: '*'
-  host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
-
 spring:
   cloud:
     gateway:
@@ -12,17 +6,17 @@ spring:
           useInsecureTrustManager: true
       routes:
         - id: users
-          uri: http://user-service
+          uri: http://user-service:8002
           predicates:
             - Path=/api/users/**
 
         - id: products
-          uri: http://product-service
+          uri: http://product-service:8001
           predicates:
             - Path=/api/products/**
 
         - id: orders
-          uri: http://order-service
+          uri: http://order-service:8003
           predicates:
             - Path=/api/orders/**
 

@@ -4,6 +4,7 @@ spring:
       httpclient:
         ssl:
           useInsecureTrustManager: true
+
       routes:
         - id: users
           uri: http://user-service:8002
@@ -19,6 +20,11 @@ spring:
           uri: http://order-service:8003
           predicates:
             - Path=/api/orders/**
+
+        - id: images
+          uri: http://image-service:8005
+          predicates:
+            - Path=/api/images/**
 
 server:
   port: 8080

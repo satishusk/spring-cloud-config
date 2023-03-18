@@ -1,28 +1,32 @@
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+        lower-case-service-id: true
       httpclient:
         ssl:
           useInsecureTrustManager: true
 
       routes:
         - id: users
-          uri: http://user-service:8002
+          uri: lb://user-service
           predicates:
             - Path=/api/users/**
 
         - id: products
-          uri: http://product-service:8001
+          uri: lb://product-service
           predicates:
             - Path=/api/products/**
 
         - id: orders
-          uri: http://order-service:8003
+          uri: lb://order-service
           predicates:
             - Path=/api/orders/**
 
         - id: images
-          uri: http://image-service:8005
+          uri: lb://image-service
           predicates:
             - Path=/api/images/**
 

@@ -6,7 +6,8 @@ spring:
     database: postgresql
 
   datasource:
-    url: jdbc:postgresql://authorize-database:5432/authorize_db
+#    url: jdbc:postgresql://authorize-database:5432/authorize_db
+    url: jdbc:postgresql://localhost:5432/authorize_db
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres

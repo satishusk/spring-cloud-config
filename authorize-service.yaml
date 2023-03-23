@@ -1,9 +1,17 @@
 spring:
+
   jpa:
     show-sql: true
+    database: postgresql
+
     hibernate:
       ddl-auto: update
-    database: postgresql
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
   datasource:
     url: jdbc:postgresql://user-database:5432/user_db

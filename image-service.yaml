@@ -6,7 +6,7 @@ spring:
     database: postgresql
 
   datasource:
-    url: jdbc:postgresql://database:5432/image_db
+    url: jdbc:postgresql://image_database:5432/image_db
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres

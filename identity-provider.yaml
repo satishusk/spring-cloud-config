@@ -1,17 +1,9 @@
 spring:
   jpa:
-    open-in-view: true
     show-sql: true
-    database: postgresql
-
     hibernate:
       ddl-auto: update
-      naming:
-        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
-
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
 
   datasource:
     url: jdbc:postgresql://user-database:5432/user_db
@@ -27,11 +19,10 @@ spring:
     init:
       platform: postgres
 
-
 server:
   port: 8075
 
 logging:
   level:
-    com.team.authorizeservice: debug
+    com.team.identityprovider: debug
     root: warn

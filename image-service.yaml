@@ -21,3 +21,8 @@ spring:
 
 server:
   port: 8005
+
+logging:
+  level:
+    com.team.imageservice: debug
+    root: warn

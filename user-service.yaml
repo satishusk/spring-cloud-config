@@ -2,11 +2,6 @@ topic:
   name: t.activation.link
 
 spring:
-  kafka:
-    bootstrap-servers: http://kafka:9092
-    producer:
-      retries: 0
-      acks: all
   jpa:
     show-sql: true
     hibernate:

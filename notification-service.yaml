@@ -7,8 +7,6 @@ spring:
     consumer:
       group-id: group-id
       auto-offset-reset: earliest
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 server:
   port: 8005

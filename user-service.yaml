@@ -7,8 +7,6 @@ spring:
     producer:
       retries: 0
       acks: all
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
   jpa:
     show-sql: true
     hibernate:

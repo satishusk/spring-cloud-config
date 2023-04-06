@@ -1,0 +1,23 @@
+spring:
+  kafka:
+    consumer:
+      group-id: "default"
+
+  test:
+    database:
+      replace: none
+
+  sql:
+    init:
+      platform: postgres
+
+server:
+  port: 8005
+
+topic:
+  name: t.activation.link
+
+logging:
+  level:
+    com.team.notificationservice: debug
+    root: warn

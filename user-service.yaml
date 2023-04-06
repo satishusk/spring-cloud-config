@@ -1,4 +1,14 @@
+topic:
+  name: t.activation.link
+
 spring:
+  kafka:
+    bootstrap-servers: http://kafka:9092
+    producer:
+      retries: 0
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
   jpa:
     show-sql: true
     hibernate:
@@ -21,9 +31,6 @@ spring:
 
 server:
   port: 8002
-
-topic:
-  name: t.activation.link
 
 logging:
   level:

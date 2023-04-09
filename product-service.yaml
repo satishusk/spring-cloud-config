@@ -26,3 +26,4 @@ logging:
   level:
     com.team.productservice: debug
     root: warn
+    com.team.jwt: debug

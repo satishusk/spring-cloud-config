@@ -1,0 +1,8 @@
+server:
+  port: 8006
+
+logging:
+  level:
+    com.team.initservice: debug
+    root: warn
+    com.team.jwt: debug

@@ -3,6 +3,7 @@ server:
 
 logging:
   level:
-    com.team.initservice: debug
     root: warn
-    com.team.jwt: debug
+    com.team.initservice: debug
+    com.team.basejwt: debug
+    com.team.jwtinit: debug

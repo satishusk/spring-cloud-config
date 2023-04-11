@@ -11,6 +11,8 @@ server:
 
 logging:
   level:
-    com.team.notificationservice: debug
     root: warn
-    com.team.jwt: debug
+    com.team.notificationservice: debug
+    com.team.basejwt: debug
+    com.team.jwtinit: debug
+    com.team.jwtcommon: debug

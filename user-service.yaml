@@ -27,6 +27,8 @@ server:
 
 logging:
   level:
-    com.team.userservice: debug
     root: warn
-    com.team.jwt: debug
+    com.team.userservice: debug
+    com.team.basejwt: debug
+    com.team.jwtinit: debug
+    com.team.jwtcommon: debug

@@ -25,10 +25,10 @@ spring:
           predicates:
             - Path=/api/orders/**
 
-        - id: images
-          uri: lb://image-service
+        - id: identity
+          uri: lb://identity-service
           predicates:
-            - Path=/api/images/**
+            - Path=/api/auth/**
 
 server:
   port: 8080

@@ -1,6 +1,6 @@
 logging:
  level:
-   org.springframework.security: WARN
+   org.springframework.security: TRACE
 
 hystrix:
  command:

@@ -24,8 +24,3 @@ spring:
 
 server:
   port: 8002
-
-logging:
-  level:
-    root: WARN
-    com.team.logger: DEBUG

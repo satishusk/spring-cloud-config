@@ -1,7 +1,7 @@
 logging:
  level:
    org.springframework.security: trace
-   root: debug
+   root: info
    com.team.logger: debug
 
 hystrix:

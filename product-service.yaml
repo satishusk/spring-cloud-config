@@ -19,5 +19,9 @@ spring:
     init:
       platform: postgres
 
+  kafka:
+    consumer:
+      group-id: "default"
+
 server:
   port: 8001

@@ -26,7 +26,7 @@ spring:
             - Path=/api/orders/**
 
         - id: identity
-          uri: lb://identity-service
+          uri: lb://identity-provider
           predicates:
             - Path=/api/auth/**
 
